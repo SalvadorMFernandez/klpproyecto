@@ -1,1 +1,112 @@
-/*# sourceMappingURL=main.css.map */
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Tauri&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Serif", serif;
+}
+
+main h1 {
+  font-family: "Tauri", sans-serif;
+}
+
+/*barra de navegacion*/
+nav div {
+  background-color: rgba(255, 255, 255, 0.7647058824);
+}
+nav div a {
+  margin: 20px;
+}
+nav div a img {
+  justify-content: flex;
+  border-radius: 10px;
+  border-color: #808080;
+  border-style: groove;
+}
+
+div ul li a:hover { /*Todos los elementos <a> cuando el mouse esté posicionado sobre ellos*/
+  font-weight: bold;
+  padding: 20px;
+  border-radius: 50px;
+  background-color: #250060;
+  color: #ffffff;
+}
+
+/*imagenes productos*/
+.prenda {
+  display: flex;
+  border: grey solid 2px;
+  align-items: center;
+  flex-direction: column;
+  font-family: sans-serif;
+  box-shadow: 1px 1px 5px 2px #240442;
+  border-radius: 10px;
+  padding: 5px;
+  padding-bottom: 10px;
+  margin: 5px;
+}
+
+.prenda button {
+  padding: 5px 15px;
+  margin: 15px;
+  border-radius: 15px;
+  background-color: #240442;
+  color: white;
+  font-family: sans-serif;
+}
+
+.prenda img {
+  margin: 30px;
+  padding: 50px;
+  width: 250px;
+}
+
+/*carousel*/
+.carousel-item {
+  height: 900px;
+}
+
+.copyright {
+  text-align: center;
+  margin: 50px;
+}
+
+.nav-pie {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  flex-direction: row;
+  gap: 0px 0px;
+  grid-template-areas: "imagen-mail imagen-instagram imagen-facebook";
+  background-color: #240442;
+  align-items: center;
+  justify-items: center;
+}
+
+.nav-pie div a img {
+  width: 100px;
+  margin: 40px;
+  padding: 20px;
+  border-radius: 50px;
+}
+
+.nav ul a:hover { /*Todos los elementos <a> cuando el mouse esté posicionado sobre ellos*/
+  font-weight: bold;
+  padding: 20px;
+  background-color: #250060;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 480) {
+  .nav {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-area: "Logo" "Links1 Links2";
+  }
+}
+@media (max-width: 480px) {
+  .nav-pie {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "imagen-mail imagen-instagram imagen-facebook";
+    background-color: #240442;
+    flex-direction: column;
+  }
+}/*# sourceMappingURL=main.css.map */
