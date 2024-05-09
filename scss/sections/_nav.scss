@@ -1,0 +1,24 @@
+/*barra de navegacion*/
+nav{
+    div{
+        background-color: #ffffffc3;
+        a{
+            margin: 20px;
+            img{
+                width: 150px;
+                justify-content: flex;
+                border-radius: 10px;
+                border-color: #808080;
+                border-style: groove;
+
+            }
+        }
+    }
+}
+div ul li a:hover { /*Todos los elementos <a> cuando el mouse esté posicionado sobre ellos*/
+    font-weight: bold;
+    padding:20px;
+    border-radius: 50px;
+    background-color: #250060;
+    color: #ffffff;
+} 
